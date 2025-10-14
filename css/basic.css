@@ -16,6 +16,8 @@ body, html {
     border: none;
     direction: rtl;
     list-style: none;
+    background-color: transparent;
+    box-sizing: border-box;
 }
 
 .container {
