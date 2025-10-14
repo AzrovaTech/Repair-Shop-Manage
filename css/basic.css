@@ -1,0 +1,28 @@
+@font-face {
+    font-family: vazir;
+    src:          url(../fonts/vazir/Vazir-Light.woff) format('woff'),
+                  url(../fonts/vazir/Vazir-Light.ttf) format('truetype'),
+    url(../fonts/vazir/Vazir-Light.woff2) format('woff2');
+}
+
+body, html {
+    height: 100%;
+}
+
+* {
+    font-family: vazir;
+    padding: 0;
+    margin: 0;
+    border: none;
+    direction: rtl;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+
+input:focus {
+  outline: none;
+}
