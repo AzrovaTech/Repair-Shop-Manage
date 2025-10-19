@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فروشگاه الماس - خانه</title>
+    <title>فروشگاه الماس - افزودن مشتری</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css"/>
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/basic.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/main-responsive.css"/>
+    <link rel="stylesheet" href="css/users.css"/>
+    <link rel="stylesheet" href="css/users-responsive.css"/>
 </head>
 <body>
     <header>
@@ -41,26 +43,35 @@
     </header>
     <main>
         <div class="container">
-            <div class="report-container">
-                <div class="report-box">
-                    <h3>درامد در 30 روز گذشته</h2>
-                    <h4>+ 57,800,000 تومان</h3>
-                </div>
-                <div class="report-box">
-                    <h3>درامد خالص در 30 روز گذشته</h2>
-                    <h4>+ 41,380,000 تومان</h3>
-                </div>
-                <div class="report-box">
-                    <h3>سفارشات در 30 روز گذشته</h2>
-                    <h4>+ 24 عدد</h3>
-                </div>
-                <div class="report-box">
-                    <h3>مشتری های جدید در 30 روز گذشته</h2>
-                    <h4>+ 11 عدد</h3>
+            <div class="users-container">
+                <div class="add-container">
+                    <a href="users.html">
+                        بازگشت به کاربران
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+                    <div class="form-container">
+                        <form action="">
+                            <div class="input-box">
+                                <input type="text" placeholder="نام و نام خانوادگی مشتری"> 
+                            </div>
+                            <div class="input-box">
+                                <input type="tel" placeholder="شماره تلفن همراه مشتری"> 
+                            </div>
+                            <div class="input-box">
+                                <input type="tel" placeholder="کد ملی مشتری"> 
+                            </div>
+                            <div class="submit-box">
+                                <button type="submit">افزودن مشتری جدید</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascript/main.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/sweet-alert.js"></script>
 </body>
 </html>

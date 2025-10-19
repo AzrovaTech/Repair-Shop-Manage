@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه الماس - سفارش ها</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/basic.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/users.css"/>
+    <link rel="stylesheet" href="css/users-responsive.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-box">
+                <div class="menu-box">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="main-nav" id="main-nav">
+                        <ul>
+                            <li><a href="index.html">خانه</a></li>
+                            <li><a href="users.html">مشتری ها</a></li>
+                            <li><a href="orders.html">سفارش ها</a></li>
+                            <li><a href="categories.html">دسته بندی ها</a></li>
+                            <li><a href="login.html">خروج از حساب</a></li>
+                        </ul>
+                        <div class="close-box">
+                            <button class="close-btn" id="close-btn">&times;</button>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="logo">
+                    <a href="#">فروشگاه الماس</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="search-container">
+                <form action="">
+                    <div class="search-box">
+                        <input type="text" placeholder="نام سفارش را جستجو کنید !">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="users-container">
+                <div class="add-container">
+                    <a href="#">
+                        افزودن سفارش جدید
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+                <div class="table-container">
+                    <table class="users-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>نام سفارش</th>
+                                <th>نام مشتری</th>
+                                <th>قیمت</th>
+                                <th>وضعیت</th>
+                                <th>تاریخ دریافت</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <a class="name-link" href="#">تعمیر اره موتوری 200</a>
+                                </td>
+                                <td>جمشید جمشیدی</td>
+                                <td>1,700,000 تومان</td>
+                                <td>
+                                    <p class="order-status-finish">تکمیل شده</p>
+                                </td>
+                                <td>1404/7/20</td>
+                                <td class="action-buttons">
+                                    <button class="edit-btn">
+                                        <a href="#">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </button>
+                                    <button class="delete-btn">
+                                        <a href="#">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <a class="name-link" href="#">تعمیر موتور برق</a>  
+                                </td>
+                                <td>پژمان خسروپور</td>
+                                <td>7,500,000 تومان</td>
+                                <td>
+                                    <p class="order-status-repairing">در حال تعمیر</p>
+                                </td>
+                                <td>---</td>
+                                <td class="action-buttons">
+                                    <button class="edit-btn">
+                                        <a href="#">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </button>
+                                    <button class="delete-btn">
+                                        <a href="#">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <a class="name-link" href="#">تعمیر چمن زن سبز</a>
+                                </td>
+                                <td>پژمان خسروپور</td>
+                                <td>2,300,000 تومان</td>
+                                <td>
+                                    <p class="order-status-finish">تکمیل شده</p>
+                                </td>
+                                <td>1404/7/26</td>
+                                <td class="action-buttons">
+                                    <button class="edit-btn">
+                                        <a href="#">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </button>
+                                    <button class="delete-btn">
+                                        <a href="#">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="pagination-container">
+                    <a href="#">1</a>
+                    <a href="#" class="active-page">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/all.min.js"></script>
+</body>
+</html>
