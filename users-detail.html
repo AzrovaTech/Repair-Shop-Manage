@@ -53,6 +53,12 @@
                 <div class="title-container">
                     <h2>جزییات مشتری: جمشید جمشیدی</h2>
                 </div>
+                <div class="add-container">
+                    <a href="orders-add.html">
+                        افزودن سفارش جدید
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
                 <div class="table-container">
                     <table class="users-table">
                         <thead>
@@ -83,7 +89,7 @@
                                         </a>
                                     </button>
                                     <button class="delete-btn">
-                                        <a href="#">
+                                        <a href="#" onclick="confirmDelete(event, this)">
                                             <i class="fa-solid fa-trash"></i>
                                         </a>
                                     </button>
@@ -106,7 +112,7 @@
                                         </a>
                                     </button>
                                     <button class="delete-btn">
-                                        <a href="#">
+                                        <a href="#" onclick="confirmDelete(event, this)">
                                             <i class="fa-solid fa-trash"></i>
                                        </a>
                                     </button>

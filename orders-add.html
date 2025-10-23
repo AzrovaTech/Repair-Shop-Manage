@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه الماس - افزودن سفارش</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/basic.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/users.css"/>
+    <link rel="stylesheet" href="css/users-responsive.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-box">
+                <div class="menu-box">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="main-nav" id="main-nav">
+                        <ul>
+                            <li><a href="index.html">خانه</a></li>
+                            <li><a href="users.html">مشتری ها</a></li>
+                            <li><a href="orders.html">سفارش ها</a></li>
+                            <li><a href="categories.html">دسته بندی ها</a></li>
+                            <li><a href="login.html">خروج از حساب</a></li>
+                        </ul>
+                        <div class="close-box">
+                            <button class="close-btn" id="close-btn">&times;</button>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="logo">
+                    <a href="#">فروشگاه الماس</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="users-container">
+                <div class="add-container">
+                    <a href="users-detail.html">
+                        بازگشت به کاربر
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+                    <div class="title-container">
+                        <h2>افزودن سفارش برای جمشید جمشیدی</h2>
+                    </div>
+                    <div class="form-container">
+                        <form action="">
+                            <div class="input-box">
+                                <input type="text" placeholder="نام سفارش"> 
+                            </div>
+                            <div class="input-box">
+                                <input type="tel" placeholder="قیمت سفارش"> 
+                            </div>
+                            <div class="dropdown">
+                                <button>
+                                    <p id="status-text">وضعیت سفارش</p>
+                                    <i class="fa-solid fa-circle-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-option" href="#" data-value="finished">تکمیل شده</a>
+                                    <a class="dropdown-option" href="#" data-value="working">در حال تکمیل</a>
+                                </div>
+                            </div>
+                                <div class="input-box">
+                                    <textarea 
+                                        id="description" 
+                                        name="Description" 
+                                        rows="8" 
+                                        placeholder="اینجا توضیحات خود را بنویسید..."
+                                        class="description-textarea"
+                                    ></textarea>
+                                </div>
+                            <div class="submit-box">
+                                <button type="submit">افزودن مشتری جدید</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/sweet-alert.js"></script>
+    <script src="javascript/dropdown.js"></script>
+</body>
+</html>

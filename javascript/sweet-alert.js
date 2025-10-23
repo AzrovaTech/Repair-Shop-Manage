@@ -1,5 +1,5 @@
-function confirmDelete() {
-    console.log("xxxx")
+function confirmDelete(event, el) {
+  event.preventDefault();
   Swal.fire({
     title: "آیا از حذف این آیتم مطمعن هستید ؟",
     text: "این عمل بدون بازگشت است !",
@@ -16,7 +16,9 @@ function confirmDelete() {
             text: "آیتم مورد نظر با موفقیت حذف شد",
             icon: "success",
             confirmButtonText: "باشه"
-        });
+        }).then(() => {
+          window.location.href = el.href;
+      });
     }
   });
 }

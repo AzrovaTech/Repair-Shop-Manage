@@ -54,12 +54,6 @@
                 </form>
             </div>
             <div class="users-container">
-                <div class="add-container">
-                    <a href="#">
-                        افزودن سفارش جدید
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                </div>
                 <div class="table-container">
                     <table class="users-table">
                         <thead>
@@ -92,7 +86,7 @@
                                         </a>
                                     </button>
                                     <button class="delete-btn">
-                                        <a href="#">
+                                        <a href="#" onclick="confirmDelete(event, this)">
                                             <i class="fa-solid fa-trash"></i>
                                         </a>
                                     </button>
@@ -116,7 +110,7 @@
                                         </a>
                                     </button>
                                     <button class="delete-btn">
-                                        <a href="#">
+                                        <a href="#" onclick="confirmDelete(event, this)">
                                             <i class="fa-solid fa-trash"></i>
                                         </a>
                                     </button>
@@ -140,7 +134,7 @@
                                         </a>
                                     </button>
                                     <button class="delete-btn">
-                                        <a href="#">
+                                        <a href="#" onclick="confirmDelete(event, this)">
                                             <i class="fa-solid fa-trash"></i>
                                         </a>
                                     </button>
@@ -159,7 +153,9 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="javascript/main.js"></script>
     <script src="javascript/all.min.js"></script>
+    <script src="javascript/sweet-alert.js"></script>
 </body>
 </html>
